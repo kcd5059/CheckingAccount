@@ -12,7 +12,7 @@ public class CheckingAccountTests {
 	Savings savings = new Savings(222, 1000);
 
 	@Test
-	public void test() {
+	public void tests() {
 		// Account tests
 		//Check setDescription method
 		account.setDescription("My account");
