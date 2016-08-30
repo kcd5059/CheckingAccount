@@ -55,6 +55,9 @@ public class CheckingAccountTests {
 		//Test setInterestRate
 		savings.setInterestRate(30);
 		assertEquals(.3, savings.getInterestRate(), 0);
+		//Test setting negative interest rate
+		savings.setInterestRate(-.015);
+		assertEquals(.3, savings.getInterestRate(), 0);
 		//Test calcDepositInterest with new interest rate
 		assertEquals(150.75, savings.calcDepositInterest(6), 0);
 		assertEquals(1155.75, savings.getBalance(), 0);
